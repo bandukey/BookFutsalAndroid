@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dipesh.finalassignment">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_crown2"
+        android:label="RB"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalAssignment"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.dipesh.finalassignment.ui.GoogleMapsActivity"
+            android:label="@string/title_activity_google_maps"></activity>
+        <activity android:name="com.dipesh.finalassignment.ui.FeedbackActivity" />
+        <activity android:name="com.dipesh.finalassignment.ui.ThemeActivity" />
+        <activity android:name="com.dipesh.finalassignment.ui.AboutActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" /> <!-- <activity -->
+        <!-- android:name=".ui.CartActivity" -->
+        <!-- android:label="@string/title_activity_cart" /> -->
+        <activity
+            android:name="com.dipesh.finalassignment.ui.InsertFutsalActivity"
+            android:label="@string/title_activity_insert_food" />
+        <activity android:name="com.dipesh.finalassignment.ui.SplashActivity" />
+        <activity android:name="com.dipesh.finalassignment.ui.LoginActivity" />
+        <activity
+            android:name="com.dipesh.finalassignment.ui.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.FinalAssignment.NoActionBar" />
+        <activity android:name="com.dipesh.finalassignment.ui.SignupActivity" />
+        <activity android:name="com.dipesh.finalassignment.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
