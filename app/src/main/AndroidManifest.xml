@@ -21,8 +21,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_crown2"
-        android:label="RB"
+        android:icon="@drawable/ic_football_ball"
+        android:label="FutsalBook"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalAssignment"

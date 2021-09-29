@@ -13,7 +13,7 @@ class FutsalTest {
     @Test
     fun checkLogin() = runBlocking{
         val userRepo = UserRepo()
-        val response = userRepo.loginUser("saugat", "123456")
+        val response = userRepo.loginUser("dipesh@", "123456")
         val expectedResult = true
         val actualResult = response.success
         Assert.assertEquals(expectedResult, actualResult)

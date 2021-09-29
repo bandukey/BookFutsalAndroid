@@ -23,10 +23,10 @@ class LoginTest {
     @Test
     fun checkLoginUI(){
         onView(withId(R.id.etEmail))
-                .perform(ViewActions.typeText("admin@gmail.com"))
+                .perform(ViewActions.typeText("dipesh@"))
 
         onView(withId(R.id.etPassword))
-                .perform(ViewActions.typeText("admin123"))
+                .perform(ViewActions.typeText("123456"))
 
         closeSoftKeyboard()
 
